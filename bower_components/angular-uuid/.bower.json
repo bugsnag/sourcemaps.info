@@ -1,0 +1,24 @@
+{
+  "name": "angular-uuid",
+  "version": "0.1.0",
+  "main": "uuid.min.js",
+  "dependencies": {
+    "angular": "~1.0.7"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "homepage": "https://github.com/ajsd/angular-uuid",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "33d501b80d3de01710a100061d47632021108b8d"
+  },
+  "_source": "git://github.com/ajsd/angular-uuid.git",
+  "_target": "~0.1.0",
+  "_originalSource": "angular-uuid",
+  "_direct": true
+}

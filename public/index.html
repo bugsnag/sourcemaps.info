@@ -1,0 +1,49 @@
+<html ng-app="sourcemapsApp">
+
+<h1>Online Sourcemapper</h1>
+<p>This tool decodes stacktraces using source maps!</p>
+
+<section ng-controller="MainController">
+
+<textarea cols="90" rows="20" ng-model="raw"></textarea>
+
+<textarea cols="90" rows="20" ng-model="output"></textarea>
+
+<div ng-repeat="(_, script) in loading">
+
+  <section ng-controller="LoadController">
+    <ul>
+      <li ng-if="script.url">
+        Loading <b>{{script.url}}</b> to find source map URL.
+        <span ng-if="script.loading">...</span>
+      </li>
+
+      <li ng-if="script.mapUrl">
+        Loading <b>{{script.mapUrl}}</b>.
+        <span ng-if="script.loadingMap">...</span>
+      </li>
+
+      <li ng-if="script.map && !script.error">
+        Successfully loaded, using map.
+      </li>
+
+      <li ng-if="script.error">
+        Failed to load: <i>{{script.error}}</i>.<br/>
+
+        Paste the source map here:
+        <textarea ng-model="script.map"></textarea>
+      </li>
+
+  </section>
+</div>
+
+<pre>{{mapped}}</pre>
+
+</section>
+
+<script src="/bower_components/angular/angular.min.js"></script>
+<script src="/bower_components/angular-uuid/uuid.min.js"></script>
+<script src="/bower_components/uri.js/src/URI.min.js"></script>
+<script src="/javascripts/source-map.js"></script>
+<script src="/javascripts/index.js"></script>
+</html>

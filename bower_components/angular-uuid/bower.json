@@ -1,0 +1,13 @@
+{
+  "name": "angular-uuid",
+  "version": "0.1.0",
+  "main": "uuid.min.js",
+  "dependencies": {
+    "angular": "~1.0.7"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}
