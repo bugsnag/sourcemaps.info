@@ -81,9 +81,7 @@ sourcemapsApp.controller('LoadController', ['$scope', '$http', function ($scope,
         }
         $scope.script.loading = true;
 
-        $http.get($scope.script.url).catch(function () {
-            return $http.get("/get/", {params: {url: $scope.script.url}});
-        }).then(function (response) {
+        $http.get("/get/", {params: {url: $scope.script.url}}).then(function (response) {
 
             if (response.headers()['x-sourcemap']) {
                 $scope.script.mapUrl = response.headers()['x-sourcemap'];
@@ -116,8 +114,6 @@ sourcemapsApp.controller('LoadController', ['$scope', '$http', function ($scope,
             $scope.script.loading = false;
         });
 
-        console.log('hum');
-
     });
 
     $scope.$watch('script.mapUrl', function (newVal) {
@@ -126,9 +122,7 @@ sourcemapsApp.controller('LoadController', ['$scope', '$http', function ($scope,
         }
         $scope.script.loadingMap = true;
 
-        $http.get($scope.script.mapUrl).catch(function () {
-            return $http.get("/get/", {params: {url: $scope.script.mapUrl}});
-        }).then(function (response) {
+        $http.get("/get/", {params: {url: $scope.script.mapUrl}}).then(function (response) {
             $scope.script.map = JSON.stringify(response.data);
 
         }).finally(function () {
