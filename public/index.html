@@ -1,45 +1,75 @@
 <html ng-app="sourcemapsApp">
 
-<h1>Online Sourcemapper</h1>
-<p>This tool decodes stacktraces using source maps!</p>
+<meta charset="utf-8"/>
 
-<section ng-controller="MainController">
+<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
 
-<textarea cols="90" rows="20" ng-model="raw"></textarea>
 
-<textarea cols="90" rows="20" ng-model="output"></textarea>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      SourceMaps.info
+    </a>
+  </div>
+</nav>
 
-<div ng-repeat="(_, script) in loading">
+<a href="https://github.com/ConradIrwin/sourcemaps.info"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
 
-  <section ng-controller="LoadController">
-    <ul>
-      <li ng-if="script.url">
-        Loading <b>{{script.url}}</b> to find source map URL.
-        <span ng-if="script.loading">...</span>
-      </li>
+<div class="container">
 
-      <li ng-if="script.mapUrl">
-        Loading <b>{{script.mapUrl}}</b>.
-        <span ng-if="script.loadingMap">...</span>
-      </li>
 
-      <li ng-if="script.map && !script.error">
-        Successfully loaded, using map.
-      </li>
+  <h1>Online Sourcemapper</h1>
+  <p>This tool lets you apply <a href="http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/">source maps</a> to stacktraces.<br/>Paste the minified stacktrace or url, and it will look up the original.</p>
 
-      <li ng-if="script.error">
-        Failed to load: <i>{{script.error}}</i>.<br/>
+  <section ng-controller="MainController">
+    <div class="row">
+      <div class="col-md-6">
 
-        Paste the source map here:
-        <textarea ng-model="script.map"></textarea>
-      </li>
+        <textarea class="form-control" rows="20" ng-model="raw" placeholder="Paste your stacktrace here"></textarea>
+      </div>
+
+      <div class="col-md-6">
+        <textarea readonly="readonly" class="form-control" rows="20" ng-model="output"></textarea>
+      </div>
+    </div>
+
+    <div style="margin-top: 15px" class="row" ng-repeat="(_, script) in loading">
+
+      <section ng-controller="LoadController">
+        <ul>
+          <li ng-if="script.url">
+            Loading <b>{{script.url}}</b> to find source map URL.
+            <span ng-if="script.loading">...</span>
+          </li>
+
+          <li ng-if="script.mapUrl">
+            Loading <b>{{script.mapUrl}}</b>.
+            <span ng-if="script.loadingMap">...</span>
+          </li>
+
+          <li ng-if="script.map && !script.error">
+            Successfully loaded, using map.
+          </li>
+
+          <li ng-if="script.error">
+            Failed to load: <i>{{script.error}}</i>.<br/>
+
+            Paste the source map here:
+            <textarea ng-model="script.map"></textarea>
+          </li>
+
+      </section>
+    </div>
 
   </section>
+
 </div>
 
-<pre>{{mapped}}</pre>
+<script
+  src="//d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.min.js"
+  data-apikey="3ef045d79e25c974a9e9b89af722dcc8">
+</script>
 
-</section>
 
 <script src="/bower_components/angular/angular.min.js"></script>
 <script src="/bower_components/angular-uuid/uuid.min.js"></script>

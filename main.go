@@ -5,6 +5,7 @@ import (
 	"log"
 	"net"
 	"net/http"
+	"os"
 
 	"github.com/bugsnag/bugsnag-go"
 )
@@ -21,9 +22,17 @@ func main() {
 
 	http.Handle("/", http.FileServer(http.Dir("public")))
 
-	log.Println("Listening on :4000")
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "4000"
+	}
 
-	http.ListenAndServe(":4000", bugsnag.Handler(nil))
+	log.Println("Listening on :" + port)
+
+	err := http.ListenAndServe(":" + port, bugsnag.Handler(nil))
+	if err != nil {
+		panic(err)
+	}
 }
 
 func proxy(w http.ResponseWriter, r *http.Request) {

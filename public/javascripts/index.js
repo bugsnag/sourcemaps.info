@@ -55,11 +55,11 @@ sourcemapsApp.controller('MainController', ['$scope', '$http', 'uuid4', function
                     var consumer = new sourceMap.SourceMapConsumer(script.map);
 
                     var position = consumer.originalPositionFor({
-                        line: Number(line || 0),
-                        column: Number(col || 0)
+                        line: Number(line || 1),
+                        column: Number(col || 1)
                     });
 
-                    if (position) {
+                    if (position && position.source) {
                         return [position.source, position.line, position.column].join(":");
                     }
                 }
@@ -98,6 +98,11 @@ sourcemapsApp.controller('LoadController', ['$scope', '$http', function ($scope,
                 }
             });
 
+            if (!$scope.script.mapUrl) {
+                $scope.script.error = 'No source map comment or header at ' + $scope.script.url;
+
+            }
+
         }).catch(function (response) {
             if (response.headers()['x-proxy-error']) {
                 $scope.script.error = response.headers()['x-proxy-error'];
@@ -110,6 +115,8 @@ sourcemapsApp.controller('LoadController', ['$scope', '$http', function ($scope,
         }).finally(function () {
             $scope.script.loading = false;
         });
+
+        console.log('hum');
 
     });
 
