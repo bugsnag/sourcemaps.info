@@ -19,7 +19,7 @@
 
 
   <h1>Online Sourcemapper</h1>
-  <p>This tool lets you apply <a href="http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/">source maps</a> to stacktraces.<br/>Paste the minified stacktrace or url, and it will look up the original.</p>
+  <p>This tool lets you apply <a href="http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/">source maps</a> to stacktraces.<br/>Paste the minified stacktrace or just a url with a line number and a column number, and it will look up the original.</p>
 
   <section ng-controller="MainController">
     <div class="row">
@@ -60,6 +60,12 @@
 
       </section>
     </div>
+
+    <p><i>NOTE: Requests are made from the sourcemaps.info servers, so we cannot look up sourcemaps running on localhost or inside your private network.</i></p>
+
+    <hr/>
+
+    <p>A <a href="https://bugsnag.com">Bugsnag</a> side-project.</p>
 
   </section>
 

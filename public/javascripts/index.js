@@ -16,8 +16,6 @@ sourcemapsApp.controller('MainController', ['$scope', '$http', 'uuid4', function
         return _public;
     }
 
-    $scope.raw = "Error: hoo\n at n (http://localhost/bugsnag/bog.min.js:1:32)\n at o (http://localhost/bugsnag/bog.min.js:1:62)\n at t (http://localhost/bugsnag/bog.min.js:1:79)\n at i (http://localhost/bugsnag/bog.min.js:1:96)\n at u (http://localhost/bugsnag/bog.min.js:1:113) ";
-
     $scope.loading = {};
 
     $scope.$watch('raw', function (newVal, oldVal) {
