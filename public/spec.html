@@ -1,0 +1,1827 @@
+<html>
+
+<head>
+    <title>Source Map Revision 3 Proposal</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">
+        ul.lst-kix_wtoh0mytj1vb-7 {
+            list-style-type: none
+        }
+        ul.lst-kix_wtoh0mytj1vb-6 {
+            list-style-type: none
+        }
+        ul.lst-kix_wtoh0mytj1vb-5 {
+            list-style-type: none
+        }
+        ul.lst-kix_wtoh0mytj1vb-4 {
+            list-style-type: none
+        }
+        .lst-kix_a9qddps1t1gt-1>li:before {
+            content: "\0025cb  "
+        }
+        .lst-kix_4muvd055a426-1>li:before {
+            content: "" counter(lst-ctn-kix_4muvd055a426-1, lower-latin) ". "
+        }
+        ul.lst-kix_wtoh0mytj1vb-3 {
+            list-style-type: none
+        }
+        .lst-kix_a9qddps1t1gt-7>li:before {
+            content: "\0025cb  "
+        }
+        ul.lst-kix_wtoh0mytj1vb-2 {
+            list-style-type: none
+        }
+        ul.lst-kix_wtoh0mytj1vb-1 {
+            list-style-type: none
+        }
+        .lst-kix_vimrmofn9nkl-4>li {
+            counter-increment: lst-ctn-kix_vimrmofn9nkl-4
+        }
+        ul.lst-kix_wtoh0mytj1vb-0 {
+            list-style-type: none
+        }
+        .lst-kix_5xseafjoky57-0>li:before {
+            content: "\0025cf  "
+        }
+        .lst-kix_vimrmofn9nkl-5>li {
+            counter-increment: lst-ctn-kix_vimrmofn9nkl-5
+        }
+        ul.lst-kix_wtoh0mytj1vb-8 {
+            list-style-type: none
+        }
+        ol.lst-kix_vimrmofn9nkl-4.start {
+            counter-reset: lst-ctn-kix_vimrmofn9nkl-4 0
+        }
+        ol.lst-kix_ixecup53njwh-4.start {
+            counter-reset: lst-ctn-kix_ixecup53njwh-4 0
+        }
+        ol.lst-kix_4muvd055a426-4.start {
+            counter-reset: lst-ctn-kix_4muvd055a426-4 0
+        }
+        ol.lst-kix_p580de6gve64-6.start {
+            counter-reset: lst-ctn-kix_p580de6gve64-6 0
+        }
+        .lst-kix_ixecup53njwh-6>li:before {
+            content: "" counter(lst-ctn-kix_ixecup53njwh-6, decimal) ". "
+        }
+        .lst-kix_a9qddps1t1gt-8>li:before {
+            content: "\0025a0  "
+        }
+        ol.lst-kix_vgujwxulb598-0.start {
+            counter-reset: lst-ctn-kix_vgujwxulb598-0 0
+        }
+        .lst-kix_vimrmofn9nkl-0>li:before {
+            content: "" counter(lst-ctn-kix_vimrmofn9nkl-0, decimal) ". "
+        }
+        ol.lst-kix_vimrmofn9nkl-2.start {
+            counter-reset: lst-ctn-kix_vimrmofn9nkl-2 0
+        }
+        .lst-kix_ixecup53njwh-3>li {
+            counter-increment: lst-ctn-kix_ixecup53njwh-3
+        }
+        .lst-kix_vimrmofn9nkl-7>li:before {
+            content: "" counter(lst-ctn-kix_vimrmofn9nkl-7, lower-latin) ". "
+        }
+        ol.lst-kix_m7qnbm8m71hm-7 {
+            list-style-type: none
+        }
+        .lst-kix_oxjbhptpdal1-4>li:before {
+            content: "\0025cb  "
+        }
+        .lst-kix_vgujwxulb598-7>li:before {
+            content: "" counter(lst-ctn-kix_vgujwxulb598-7, lower-latin) ". "
+        }
+        .lst-kix_ixecup53njwh-3>li:before {
+            content: "" counter(lst-ctn-kix_ixecup53njwh-3, decimal) ". "
+        }
+        ol.lst-kix_m7qnbm8m71hm-8 {
+            list-style-type: none
+        }
+        .lst-kix_4muvd055a426-7>li {
+            counter-increment: lst-ctn-kix_4muvd055a426-7
+        }
+        ol.lst-kix_m7qnbm8m71hm-5 {
+            list-style-type: none
+        }
+        ol.lst-kix_m7qnbm8m71hm-6 {
+            list-style-type: none
+        }
+        ol.lst-kix_m7qnbm8m71hm-3 {
+            list-style-type: none
+        }
+        ol.lst-kix_m7qnbm8m71hm-4 {
+            list-style-type: none
+        }
+        .lst-kix_4muvd055a426-5>li {
+            counter-increment: lst-ctn-kix_4muvd055a426-5
+        }
+        ol.lst-kix_m7qnbm8m71hm-1 {
+            list-style-type: none
+        }
+        ol.lst-kix_m7qnbm8m71hm-2 {
+            list-style-type: none
+        }
+        ol.lst-kix_vgujwxulb598-1.start {
+            counter-reset: lst-ctn-kix_vgujwxulb598-1 0
+        }
+        .lst-kix_vimrmofn9nkl-2>li:before {
+            content: "" counter(lst-ctn-kix_vimrmofn9nkl-2, lower-roman) ". "
+        }
+        .lst-kix_p580de6gve64-1>li {
+            counter-increment: lst-ctn-kix_p580de6gve64-1
+        }
+        ol.lst-kix_vgujwxulb598-6.start {
+            counter-reset: lst-ctn-kix_vgujwxulb598-6 0
+        }
+        ol.lst-kix_vgujwxulb598-4.start {
+            counter-reset: lst-ctn-kix_vgujwxulb598-4 0
+        }
+        .lst-kix_ixecup53njwh-2>li:before {
+            content: "" counter(lst-ctn-kix_ixecup53njwh-2, lower-roman) ". "
+        }
+        .lst-kix_wtoh0mytj1vb-8>li:before {
+            content: "\0025a0  "
+        }
+        .lst-kix_vimrmofn9nkl-0>li {
+            counter-increment: lst-ctn-kix_vimrmofn9nkl-0
+        }
+        .lst-kix_4muvd055a426-8>li {
+            counter-increment: lst-ctn-kix_4muvd055a426-8
+        }
+        .lst-kix_a9qddps1t1gt-3>li:before {
+            content: "\0025cf  "
+        }
+        ol.lst-kix_4muvd055a426-1.start {
+            counter-reset: lst-ctn-kix_4muvd055a426-1 0
+        }
+        .lst-kix_m7qnbm8m71hm-4>li {
+            counter-increment: lst-ctn-kix_m7qnbm8m71hm-4
+        }
+        ol.lst-kix_vimrmofn9nkl-1.start {
+            counter-reset: lst-ctn-kix_vimrmofn9nkl-1 0
+        }
+        .lst-kix_p580de6gve64-2>li:before {
+            content: "" counter(lst-ctn-kix_p580de6gve64-2, lower-roman) ". "
+        }
+        .lst-kix_p580de6gve64-8>li {
+            counter-increment: lst-ctn-kix_p580de6gve64-8
+        }
+        .lst-kix_m7qnbm8m71hm-0>li {
+            counter-increment: lst-ctn-kix_m7qnbm8m71hm-0
+        }
+        .lst-kix_m7qnbm8m71hm-7>li:before {
+            content: "" counter(lst-ctn-kix_m7qnbm8m71hm-7, lower-latin) ". "
+        }
+        .lst-kix_wtoh0mytj1vb-4>li:before {
+            content: "\0025cb  "
+        }
+        ol.lst-kix_vimrmofn9nkl-8.start {
+            counter-reset: lst-ctn-kix_vimrmofn9nkl-8 0
+        }
+        ol.lst-kix_p580de6gve64-5.start {
+            counter-reset: lst-ctn-kix_p580de6gve64-5 0
+        }
+        .lst-kix_vgujwxulb598-1>li:before {
+            content: "" counter(lst-ctn-kix_vgujwxulb598-1, lower-latin) ". "
+        }
+        .lst-kix_p580de6gve64-7>li {
+            counter-increment: lst-ctn-kix_p580de6gve64-7
+        }
+        .lst-kix_4muvd055a426-0>li:before {
+            content: "" counter(lst-ctn-kix_4muvd055a426-0, decimal) ". "
+        }
+        .lst-kix_ixecup53njwh-6>li {
+            counter-increment: lst-ctn-kix_ixecup53njwh-6
+        }
+        ol.lst-kix_4muvd055a426-3.start {
+            counter-reset: lst-ctn-kix_4muvd055a426-3 0
+        }
+        .lst-kix_m7qnbm8m71hm-2>li {
+            counter-increment: lst-ctn-kix_m7qnbm8m71hm-2
+        }
+        ol.lst-kix_4muvd055a426-0.start {
+            counter-reset: lst-ctn-kix_4muvd055a426-0 0
+        }
+        ol.lst-kix_ixecup53njwh-5.start {
+            counter-reset: lst-ctn-kix_ixecup53njwh-5 0
+        }
+        ol.lst-kix_4muvd055a426-2.start {
+            counter-reset: lst-ctn-kix_4muvd055a426-2 0
+        }
+        .lst-kix_5xseafjoky57-5>li:before {
+            content: "\0025a0  "
+        }
+        .lst-kix_vimrmofn9nkl-8>li:before {
+            content: "" counter(lst-ctn-kix_vimrmofn9nkl-8, lower-roman) ". "
+        }
+        .lst-kix_4muvd055a426-8>li:before {
+            content: "" counter(lst-ctn-kix_4muvd055a426-8, lower-roman) ". "
+        }
+        .lst-kix_p580de6gve64-5>li {
+            counter-increment: lst-ctn-kix_p580de6gve64-5
+        }
+        .lst-kix_wtoh0mytj1vb-5>li:before {
+            content: "\0025a0  "
+        }
+        .lst-kix_oxjbhptpdal1-5>li:before {
+            content: "\0025a0  "
+        }
+        ul.lst-kix_a9qddps1t1gt-0 {
+            list-style-type: none
+        }
+        .lst-kix_m7qnbm8m71hm-3>li {
+            counter-increment: lst-ctn-kix_m7qnbm8m71hm-3
+        }
+        ul.lst-kix_a9qddps1t1gt-1 {
+            list-style-type: none
+        }
+        ol.lst-kix_m7qnbm8m71hm-4.start {
+            counter-reset: lst-ctn-kix_m7qnbm8m71hm-4 0
+        }
+        .lst-kix_5xseafjoky57-7>li:before {
+            content: "\0025cb  "
+        }
+        ol.lst-kix_p580de6gve64-3.start {
+            counter-reset: lst-ctn-kix_p580de6gve64-3 0
+        }
+        .lst-kix_vimrmofn9nkl-7>li {
+            counter-increment: lst-ctn-kix_vimrmofn9nkl-7
+        }
+        .lst-kix_5xseafjoky57-2>li:before {
+            content: "\0025a0  "
+        }
+        .lst-kix_4muvd055a426-1>li {
+            counter-increment: lst-ctn-kix_4muvd055a426-1
+        }
+        ol.lst-kix_ixecup53njwh-1.start {
+            counter-reset: lst-ctn-kix_ixecup53njwh-1 0
+        }
+        ol.lst-kix_vgujwxulb598-3.start {
+            counter-reset: lst-ctn-kix_vgujwxulb598-3 0
+        }
+        ol.lst-kix_vimrmofn9nkl-5.start {
+            counter-reset: lst-ctn-kix_vimrmofn9nkl-5 0
+        }
+        .lst-kix_m7qnbm8m71hm-3>li:before {
+            content: "" counter(lst-ctn-kix_m7qnbm8m71hm-3, decimal) ". "
+        }
+        .lst-kix_a9qddps1t1gt-5>li:before {
+            content: "\0025a0  "
+        }
+        .lst-kix_vgujwxulb598-2>li:before {
+            content: "" counter(lst-ctn-kix_vgujwxulb598-2, lower-roman) ". "
+        }
+        .lst-kix_p580de6gve64-5>li:before {
+            content: "" counter(lst-ctn-kix_p580de6gve64-5, lower-roman) ". "
+        }
+        ol.lst-kix_m7qnbm8m71hm-3.start {
+            counter-reset: lst-ctn-kix_m7qnbm8m71hm-3 0
+        }
+        ol.lst-kix_p580de6gve64-0.start {
+            counter-reset: lst-ctn-kix_p580de6gve64-0 0
+        }
+        .lst-kix_m7qnbm8m71hm-8>li:before {
+            content: "" counter(lst-ctn-kix_m7qnbm8m71hm-8, lower-roman) ". "
+        }
+        .lst-kix_ixecup53njwh-8>li:before {
+            content: "" counter(lst-ctn-kix_ixecup53njwh-8, lower-roman) ". "
+        }
+        .lst-kix_4muvd055a426-3>li {
+            counter-increment: lst-ctn-kix_4muvd055a426-3
+        }
+        .lst-kix_a9qddps1t1gt-2>li:before {
+            content: "\0025a0  "
+        }
+        ol.lst-kix_m7qnbm8m71hm-0 {
+            list-style-type: none
+        }
+        .lst-kix_p580de6gve64-2>li {
+            counter-increment: lst-ctn-kix_p580de6gve64-2
+        }
+        .lst-kix_oxjbhptpdal1-3>li:before {
+            content: "\0025cf  "
+        }
+        .lst-kix_vgujwxulb598-5>li:before {
+            content: "" counter(lst-ctn-kix_vgujwxulb598-5, lower-roman) ". "
+        }
+        ol.lst-kix_p580de6gve64-7.start {
+            counter-reset: lst-ctn-kix_p580de6gve64-7 0
+        }
+        .lst-kix_ixecup53njwh-1>li:before {
+            content: "" counter(lst-ctn-kix_ixecup53njwh-1, lower-latin) ". "
+        }
+        .lst-kix_vgujwxulb598-0>li:before {
+            content: "" counter(lst-ctn-kix_vgujwxulb598-0, decimal) ". "
+        }
+        .lst-kix_vimrmofn9nkl-5>li:before {
+            content: "" counter(lst-ctn-kix_vimrmofn9nkl-5, lower-roman) ". "
+        }
+        .lst-kix_4muvd055a426-4>li:before {
+            content: "" counter(lst-ctn-kix_4muvd055a426-4, lower-latin) ". "
+        }
+        ul.lst-kix_oxjbhptpdal1-1 {
+            list-style-type: none
+        }
+        .lst-kix_ixecup53njwh-7>li:before {
+            content: "" counter(lst-ctn-kix_ixecup53njwh-7, lower-latin) ". "
+        }
+        ul.lst-kix_oxjbhptpdal1-0 {
+            list-style-type: none
+        }
+        .lst-kix_vgujwxulb598-2>li {
+            counter-increment: lst-ctn-kix_vgujwxulb598-2
+        }
+        .lst-kix_4muvd055a426-2>li {
+            counter-increment: lst-ctn-kix_4muvd055a426-2
+        }
+        ol.lst-kix_ixecup53njwh-6.start {
+            counter-reset: lst-ctn-kix_ixecup53njwh-6 0
+        }
+        ul.lst-kix_oxjbhptpdal1-8 {
+            list-style-type: none
+        }
+        ol.lst-kix_p580de6gve64-8.start {
+            counter-reset: lst-ctn-kix_p580de6gve64-8 0
+        }
+        ul.lst-kix_oxjbhptpdal1-7 {
+            list-style-type: none
+        }
+        ul.lst-kix_oxjbhptpdal1-6 {
+            list-style-type: none
+        }
+        ul.lst-kix_oxjbhptpdal1-5 {
+            list-style-type: none
+        }
+        ul.lst-kix_oxjbhptpdal1-4 {
+            list-style-type: none
+        }
+        .lst-kix_wtoh0mytj1vb-1>li:before {
+            content: "\0025cb  "
+        }
+        ul.lst-kix_oxjbhptpdal1-3 {
+            list-style-type: none
+        }
+        ul.lst-kix_oxjbhptpdal1-2 {
+            list-style-type: none
+        }
+        .lst-kix_vgujwxulb598-5>li {
+            counter-increment: lst-ctn-kix_vgujwxulb598-5
+        }
+        ol.lst-kix_vgujwxulb598-6 {
+            list-style-type: none
+        }
+        .lst-kix_p580de6gve64-8>li:before {
+            content: "" counter(lst-ctn-kix_p580de6gve64-8, lower-roman) ". "
+        }
+        ol.lst-kix_vgujwxulb598-5 {
+            list-style-type: none
+        }
+        .lst-kix_m7qnbm8m71hm-1>li {
+            counter-increment: lst-ctn-kix_m7qnbm8m71hm-1
+        }
+        ol.lst-kix_vgujwxulb598-4 {
+            list-style-type: none
+        }
+        ol.lst-kix_vgujwxulb598-3 {
+            list-style-type: none
+        }
+        .lst-kix_ixecup53njwh-5>li:before {
+            content: "" counter(lst-ctn-kix_ixecup53njwh-5, lower-roman) ". "
+        }
+        ol.lst-kix_vgujwxulb598-2 {
+            list-style-type: none
+        }
+        ol.lst-kix_vgujwxulb598-1 {
+            list-style-type: none
+        }
+        ol.lst-kix_ixecup53njwh-3.start {
+            counter-reset: lst-ctn-kix_ixecup53njwh-3 0
+        }
+        ol.lst-kix_vgujwxulb598-0 {
+            list-style-type: none
+        }
+        ul.lst-kix_a9qddps1t1gt-7 {
+            list-style-type: none
+        }
+        ul.lst-kix_a9qddps1t1gt-6 {
+            list-style-type: none
+        }
+        .lst-kix_4muvd055a426-7>li:before {
+            content: "" counter(lst-ctn-kix_4muvd055a426-7, lower-latin) ". "
+        }
+        .lst-kix_m7qnbm8m71hm-5>li:before {
+            content: "" counter(lst-ctn-kix_m7qnbm8m71hm-5, lower-roman) ". "
+        }
+        ul.lst-kix_a9qddps1t1gt-8 {
+            list-style-type: none
+        }
+        ol.lst-kix_4muvd055a426-6.start {
+            counter-reset: lst-ctn-kix_4muvd055a426-6 0
+        }
+        ul.lst-kix_a9qddps1t1gt-3 {
+            list-style-type: none
+        }
+        ul.lst-kix_a9qddps1t1gt-2 {
+            list-style-type: none
+        }
+        .lst-kix_p580de6gve64-1>li:before {
+            content: "" counter(lst-ctn-kix_p580de6gve64-1, lower-latin) ". "
+        }
+        ol.lst-kix_vgujwxulb598-7 {
+            list-style-type: none
+        }
+        ul.lst-kix_a9qddps1t1gt-5 {
+            list-style-type: none
+        }
+        ol.lst-kix_vgujwxulb598-8 {
+            list-style-type: none
+        }
+        ul.lst-kix_a9qddps1t1gt-4 {
+            list-style-type: none
+        }
+        .lst-kix_wtoh0mytj1vb-2>li:before {
+            content: "\0025a0  "
+        }
+        .lst-kix_vgujwxulb598-6>li:before {
+            content: "" counter(lst-ctn-kix_vgujwxulb598-6, decimal) ". "
+        }
+        ol.lst-kix_m7qnbm8m71hm-7.start {
+            counter-reset: lst-ctn-kix_m7qnbm8m71hm-7 0
+        }
+        .lst-kix_oxjbhptpdal1-8>li:before {
+            content: "\0025a0  "
+        }
+        .lst-kix_vimrmofn9nkl-6>li {
+            counter-increment: lst-ctn-kix_vimrmofn9nkl-6
+        }
+        ol.lst-kix_p580de6gve64-1.start {
+            counter-reset: lst-ctn-kix_p580de6gve64-1 0
+        }
+        ol.lst-kix_vimrmofn9nkl-8 {
+            list-style-type: none
+        }
+        ol.lst-kix_vimrmofn9nkl-7 {
+            list-style-type: none
+        }
+        .lst-kix_vimrmofn9nkl-1>li {
+            counter-increment: lst-ctn-kix_vimrmofn9nkl-1
+        }
+        ol.lst-kix_vimrmofn9nkl-4 {
+            list-style-type: none
+        }
+        ol.lst-kix_vimrmofn9nkl-3 {
+            list-style-type: none
+        }
+        ol.lst-kix_vimrmofn9nkl-6 {
+            list-style-type: none
+        }
+        ol.lst-kix_vimrmofn9nkl-5 {
+            list-style-type: none
+        }
+        ol.lst-kix_ixecup53njwh-8.start {
+            counter-reset: lst-ctn-kix_ixecup53njwh-8 0
+        }
+        ol.lst-kix_vimrmofn9nkl-0 {
+            list-style-type: none
+        }
+        ol.lst-kix_vgujwxulb598-8.start {
+            counter-reset: lst-ctn-kix_vgujwxulb598-8 0
+        }
+        ol.lst-kix_m7qnbm8m71hm-0.start {
+            counter-reset: lst-ctn-kix_m7qnbm8m71hm-0 0
+        }
+        ol.lst-kix_vimrmofn9nkl-2 {
+            list-style-type: none
+        }
+        ol.lst-kix_vimrmofn9nkl-1 {
+            list-style-type: none
+        }
+        .lst-kix_5xseafjoky57-4>li:before {
+            content: "\0025cb  "
+        }
+        ol.lst-kix_4muvd055a426-5.start {
+            counter-reset: lst-ctn-kix_4muvd055a426-5 0
+        }
+        .lst-kix_vgujwxulb598-3>li {
+            counter-increment: lst-ctn-kix_vgujwxulb598-3
+        }
+        .lst-kix_wtoh0mytj1vb-3>li:before {
+            content: "\0025cf  "
+        }
+        .lst-kix_m7qnbm8m71hm-2>li:before {
+            content: "" counter(lst-ctn-kix_m7qnbm8m71hm-2, lower-roman) ". "
+        }
+        .lst-kix_ixecup53njwh-4>li {
+            counter-increment: lst-ctn-kix_ixecup53njwh-4
+        }
+        .lst-kix_oxjbhptpdal1-6>li:before {
+            content: "\0025cf  "
+        }
+        ol.lst-kix_m7qnbm8m71hm-8.start {
+            counter-reset: lst-ctn-kix_m7qnbm8m71hm-8 0
+        }
+        .lst-kix_4muvd055a426-4>li {
+            counter-increment: lst-ctn-kix_4muvd055a426-4
+        }
+        .lst-kix_vgujwxulb598-6>li {
+            counter-increment: lst-ctn-kix_vgujwxulb598-6
+        }
+        .lst-kix_m7qnbm8m71hm-1>li:before {
+            content: "" counter(lst-ctn-kix_m7qnbm8m71hm-1, lower-latin) ". "
+        }
+        .lst-kix_p580de6gve64-6>li {
+            counter-increment: lst-ctn-kix_p580de6gve64-6
+        }
+        ol.lst-kix_m7qnbm8m71hm-6.start {
+            counter-reset: lst-ctn-kix_m7qnbm8m71hm-6 0
+        }
+        .lst-kix_4muvd055a426-6>li {
+            counter-increment: lst-ctn-kix_4muvd055a426-6
+        }
+        .lst-kix_4muvd055a426-0>li {
+            counter-increment: lst-ctn-kix_4muvd055a426-0
+        }
+        .lst-kix_wtoh0mytj1vb-0>li:before {
+            content: "\0025cf  "
+        }
+        ol.lst-kix_vimrmofn9nkl-7.start {
+            counter-reset: lst-ctn-kix_vimrmofn9nkl-7 0
+        }
+        ol.lst-kix_vimrmofn9nkl-6.start {
+            counter-reset: lst-ctn-kix_vimrmofn9nkl-6 0
+        }
+        ol.lst-kix_ixecup53njwh-2.start {
+            counter-reset: lst-ctn-kix_ixecup53njwh-2 0
+        }
+        ol.lst-kix_m7qnbm8m71hm-5.start {
+            counter-reset: lst-ctn-kix_m7qnbm8m71hm-5 0
+        }
+        .lst-kix_vimrmofn9nkl-4>li:before {
+            content: "" counter(lst-ctn-kix_vimrmofn9nkl-4, lower-latin) ". "
+        }
+        .lst-kix_vimrmofn9nkl-2>li {
+            counter-increment: lst-ctn-kix_vimrmofn9nkl-2
+        }
+        ol.lst-kix_4muvd055a426-8.start {
+            counter-reset: lst-ctn-kix_4muvd055a426-8 0
+        }
+        ol.lst-kix_ixecup53njwh-7.start {
+            counter-reset: lst-ctn-kix_ixecup53njwh-7 0
+        }
+        .lst-kix_m7qnbm8m71hm-4>li:before {
+            content: "" counter(lst-ctn-kix_m7qnbm8m71hm-4, lower-latin) ". "
+        }
+        .lst-kix_5xseafjoky57-3>li:before {
+            content: "\0025cf  "
+        }
+        .lst-kix_ixecup53njwh-0>li {
+            counter-increment: lst-ctn-kix_ixecup53njwh-0
+        }
+        .lst-kix_vgujwxulb598-7>li {
+            counter-increment: lst-ctn-kix_vgujwxulb598-7
+        }
+        ol.lst-kix_vgujwxulb598-7.start {
+            counter-reset: lst-ctn-kix_vgujwxulb598-7 0
+        }
+        ol.lst-kix_p580de6gve64-2.start {
+            counter-reset: lst-ctn-kix_p580de6gve64-2 0
+        }
+        .lst-kix_oxjbhptpdal1-0>li:before {
+            content: "\0025cf  "
+        }
+        .lst-kix_p580de6gve64-6>li:before {
+            content: "" counter(lst-ctn-kix_p580de6gve64-6, decimal) ". "
+        }
+        ol.lst-kix_vgujwxulb598-5.start {
+            counter-reset: lst-ctn-kix_vgujwxulb598-5 0
+        }
+        .lst-kix_oxjbhptpdal1-1>li:before {
+            content: "\0025cb  "
+        }
+        .lst-kix_ixecup53njwh-1>li {
+            counter-increment: lst-ctn-kix_ixecup53njwh-1
+        }
+        .lst-kix_vimrmofn9nkl-8>li {
+            counter-increment: lst-ctn-kix_vimrmofn9nkl-8
+        }
+        .lst-kix_4muvd055a426-6>li:before {
+            content: "" counter(lst-ctn-kix_4muvd055a426-6, decimal) ". "
+        }
+        ol.lst-kix_vimrmofn9nkl-0.start {
+            counter-reset: lst-ctn-kix_vimrmofn9nkl-0 0
+        }
+        ol.lst-kix_ixecup53njwh-0.start {
+            counter-reset: lst-ctn-kix_ixecup53njwh-0 0
+        }
+        ol.lst-kix_4muvd055a426-7.start {
+            counter-reset: lst-ctn-kix_4muvd055a426-7 0
+        }
+        .lst-kix_4muvd055a426-5>li:before {
+            content: "" counter(lst-ctn-kix_4muvd055a426-5, lower-roman) ". "
+        }
+        .lst-kix_m7qnbm8m71hm-8>li {
+            counter-increment: lst-ctn-kix_m7qnbm8m71hm-8
+        }
+        .lst-kix_ixecup53njwh-0>li:before {
+            content: "" counter(lst-ctn-kix_ixecup53njwh-0, decimal) ". "
+        }
+        ol.lst-kix_ixecup53njwh-6 {
+            list-style-type: none
+        }
+        ol.lst-kix_ixecup53njwh-7 {
+            list-style-type: none
+        }
+        ol.lst-kix_ixecup53njwh-4 {
+            list-style-type: none
+        }
+        ol.lst-kix_ixecup53njwh-5 {
+            list-style-type: none
+        }
+        .lst-kix_a9qddps1t1gt-4>li:before {
+            content: "\0025cb  "
+        }
+        ol.lst-kix_ixecup53njwh-8 {
+            list-style-type: none
+        }
+        ol.lst-kix_vimrmofn9nkl-3.start {
+            counter-reset: lst-ctn-kix_vimrmofn9nkl-3 0
+        }
+        .lst-kix_oxjbhptpdal1-2>li:before {
+            content: "\0025a0  "
+        }
+        .lst-kix_p580de6gve64-7>li:before {
+            content: "" counter(lst-ctn-kix_p580de6gve64-7, lower-latin) ". "
+        }
+        .lst-kix_wtoh0mytj1vb-6>li:before {
+            content: "\0025cf  "
+        }
+        ol.lst-kix_4muvd055a426-0 {
+            list-style-type: none
+        }
+        ol.lst-kix_p580de6gve64-4.start {
+            counter-reset: lst-ctn-kix_p580de6gve64-4 0
+        }
+        ol.lst-kix_4muvd055a426-1 {
+            list-style-type: none
+        }
+        .lst-kix_m7qnbm8m71hm-7>li {
+            counter-increment: lst-ctn-kix_m7qnbm8m71hm-7
+        }
+        ol.lst-kix_4muvd055a426-6 {
+            list-style-type: none
+        }
+        ol.lst-kix_4muvd055a426-7 {
+            list-style-type: none
+        }
+        ol.lst-kix_4muvd055a426-8 {
+            list-style-type: none
+        }
+        ol.lst-kix_vgujwxulb598-2.start {
+            counter-reset: lst-ctn-kix_vgujwxulb598-2 0
+        }
+        ol.lst-kix_ixecup53njwh-3 {
+            list-style-type: none
+        }
+        ol.lst-kix_4muvd055a426-2 {
+            list-style-type: none
+        }
+        ol.lst-kix_ixecup53njwh-2 {
+            list-style-type: none
+        }
+        ol.lst-kix_4muvd055a426-3 {
+            list-style-type: none
+        }
+        .lst-kix_vimrmofn9nkl-1>li:before {
+            content: "" counter(lst-ctn-kix_vimrmofn9nkl-1, lower-latin) ". "
+        }
+        ol.lst-kix_ixecup53njwh-1 {
+            list-style-type: none
+        }
+        ol.lst-kix_4muvd055a426-4 {
+            list-style-type: none
+        }
+        ol.lst-kix_ixecup53njwh-0 {
+            list-style-type: none
+        }
+        ol.lst-kix_4muvd055a426-5 {
+            list-style-type: none
+        }
+        .lst-kix_m7qnbm8m71hm-5>li {
+            counter-increment: lst-ctn-kix_m7qnbm8m71hm-5
+        }
+        .lst-kix_p580de6gve64-4>li:before {
+            content: "" counter(lst-ctn-kix_p580de6gve64-4, lower-latin) ". "
+        }
+        .lst-kix_vgujwxulb598-1>li {
+            counter-increment: lst-ctn-kix_vgujwxulb598-1
+        }
+        .lst-kix_a9qddps1t1gt-0>li:before {
+            content: "\0025cf  "
+        }
+        ol.lst-kix_m7qnbm8m71hm-1.start {
+            counter-reset: lst-ctn-kix_m7qnbm8m71hm-1 0
+        }
+        .lst-kix_vgujwxulb598-0>li {
+            counter-increment: lst-ctn-kix_vgujwxulb598-0
+        }
+        .lst-kix_m7qnbm8m71hm-6>li:before {
+            content: "" counter(lst-ctn-kix_m7qnbm8m71hm-6, decimal) ". "
+        }
+        .lst-kix_5xseafjoky57-8>li:before {
+            content: "\0025a0  "
+        }
+        .lst-kix_vgujwxulb598-4>li {
+            counter-increment: lst-ctn-kix_vgujwxulb598-4
+        }
+        .lst-kix_p580de6gve64-0>li:before {
+            content: "" counter(lst-ctn-kix_p580de6gve64-0, decimal) ". "
+        }
+        .lst-kix_vimrmofn9nkl-3>li:before {
+            content: "" counter(lst-ctn-kix_vimrmofn9nkl-3, decimal) ". "
+        }
+        .lst-kix_vgujwxulb598-4>li:before {
+            content: "" counter(lst-ctn-kix_vgujwxulb598-4, lower-latin) ". "
+        }
+        .lst-kix_vimrmofn9nkl-3>li {
+            counter-increment: lst-ctn-kix_vimrmofn9nkl-3
+        }
+        ul.lst-kix_5xseafjoky57-0 {
+            list-style-type: none
+        }
+        ul.lst-kix_5xseafjoky57-1 {
+            list-style-type: none
+        }
+        .lst-kix_p580de6gve64-3>li:before {
+            content: "" counter(lst-ctn-kix_p580de6gve64-3, decimal) ". "
+        }
+        .lst-kix_m7qnbm8m71hm-0>li:before {
+            content: "" counter(lst-ctn-kix_m7qnbm8m71hm-0, decimal) ". "
+        }
+        .lst-kix_ixecup53njwh-8>li {
+            counter-increment: lst-ctn-kix_ixecup53njwh-8
+        }
+        .lst-kix_wtoh0mytj1vb-7>li:before {
+            content: "\0025cb  "
+        }
+        .lst-kix_a9qddps1t1gt-6>li:before {
+            content: "\0025cf  "
+        }
+        .lst-kix_5xseafjoky57-6>li:before {
+            content: "\0025cf  "
+        }
+        .lst-kix_p580de6gve64-3>li {
+            counter-increment: lst-ctn-kix_p580de6gve64-3
+        }
+        .lst-kix_vgujwxulb598-8>li {
+            counter-increment: lst-ctn-kix_vgujwxulb598-8
+        }
+        .lst-kix_4muvd055a426-2>li:before {
+            content: "" counter(lst-ctn-kix_4muvd055a426-2, lower-roman) ". "
+        }
+        .lst-kix_vgujwxulb598-8>li:before {
+            content: "" counter(lst-ctn-kix_vgujwxulb598-8, lower-roman) ". "
+        }
+        ul.lst-kix_5xseafjoky57-5 {
+            list-style-type: none
+        }
+        ul.lst-kix_5xseafjoky57-4 {
+            list-style-type: none
+        }
+        ul.lst-kix_5xseafjoky57-3 {
+            list-style-type: none
+        }
+        ul.lst-kix_5xseafjoky57-2 {
+            list-style-type: none
+        }
+        ol.lst-kix_m7qnbm8m71hm-2.start {
+            counter-reset: lst-ctn-kix_m7qnbm8m71hm-2 0
+        }
+        ul.lst-kix_5xseafjoky57-8 {
+            list-style-type: none
+        }
+        ul.lst-kix_5xseafjoky57-7 {
+            list-style-type: none
+        }
+        .lst-kix_4muvd055a426-3>li:before {
+            content: "" counter(lst-ctn-kix_4muvd055a426-3, decimal) ". "
+        }
+        ul.lst-kix_5xseafjoky57-6 {
+            list-style-type: none
+        }
+        .lst-kix_oxjbhptpdal1-7>li:before {
+            content: "\0025cb  "
+        }
+        .lst-kix_ixecup53njwh-5>li {
+            counter-increment: lst-ctn-kix_ixecup53njwh-5
+        }
+        .lst-kix_ixecup53njwh-4>li:before {
+            content: "" counter(lst-ctn-kix_ixecup53njwh-4, lower-latin) ". "
+        }
+        .lst-kix_ixecup53njwh-2>li {
+            counter-increment: lst-ctn-kix_ixecup53njwh-2
+        }
+        .lst-kix_m7qnbm8m71hm-6>li {
+            counter-increment: lst-ctn-kix_m7qnbm8m71hm-6
+        }
+        .lst-kix_vgujwxulb598-3>li:before {
+            content: "" counter(lst-ctn-kix_vgujwxulb598-3, decimal) ". "
+        }
+        .lst-kix_vimrmofn9nkl-6>li:before {
+            content: "" counter(lst-ctn-kix_vimrmofn9nkl-6, decimal) ". "
+        }
+        .lst-kix_p580de6gve64-4>li {
+            counter-increment: lst-ctn-kix_p580de6gve64-4
+        }
+        ol.lst-kix_p580de6gve64-1 {
+            list-style-type: none
+        }
+        ol.lst-kix_p580de6gve64-2 {
+            list-style-type: none
+        }
+        ol.lst-kix_p580de6gve64-0 {
+            list-style-type: none
+        }
+        .lst-kix_5xseafjoky57-1>li:before {
+            content: "\0025cb  "
+        }
+        .lst-kix_ixecup53njwh-7>li {
+            counter-increment: lst-ctn-kix_ixecup53njwh-7
+        }
+        ol.lst-kix_p580de6gve64-7 {
+            list-style-type: none
+        }
+        ol.lst-kix_p580de6gve64-8 {
+            list-style-type: none
+        }
+        ol.lst-kix_p580de6gve64-5 {
+            list-style-type: none
+        }
+        ol.lst-kix_p580de6gve64-6 {
+            list-style-type: none
+        }
+        .lst-kix_p580de6gve64-0>li {
+            counter-increment: lst-ctn-kix_p580de6gve64-0
+        }
+        ol.lst-kix_p580de6gve64-3 {
+            list-style-type: none
+        }
+        ol.lst-kix_p580de6gve64-4 {
+            list-style-type: none
+        }
+        ol {
+            margin: 0;
+            padding: 0
+        }
+        .c12 {
+            border-bottom-width: 1pt;
+            border-top-style: solid;
+            width: 120.2pt;
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-bottom-style: solid;
+            vertical-align: top;
+            border-top-color: #000000;
+            border-left-color: #000000;
+            border-right-color: #000000;
+            border-left-style: solid;
+            border-right-width: 1pt;
+            border-left-width: 1pt
+        }
+        .c25 {
+            border-bottom-width: 1pt;
+            border-top-style: solid;
+            width: 90.8pt;
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-bottom-style: solid;
+            vertical-align: top;
+            border-top-color: #000000;
+            border-left-color: #000000;
+            border-right-color: #000000;
+            border-left-style: solid;
+            border-right-width: 1pt;
+            border-left-width: 1pt
+        }
+        .c4 {
+            border-bottom-width: 1pt;
+            border-top-style: solid;
+            width: 377.2pt;
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-bottom-style: solid;
+            vertical-align: top;
+            border-top-color: #000000;
+            border-left-color: #000000;
+            border-right-color: #000000;
+            border-left-style: solid;
+            border-right-width: 1pt;
+            border-left-width: 1pt
+        }
+        .c17 {
+            border-bottom-width: 1pt;
+            border-top-style: solid;
+            width: 208pt;
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-bottom-style: solid;
+            vertical-align: top;
+            border-top-color: #000000;
+            border-left-color: #000000;
+            border-right-color: #000000;
+            border-left-style: solid;
+            border-right-width: 1pt;
+            border-left-width: 1pt
+        }
+        .c15 {
+            border-bottom-width: 1pt;
+            border-top-style: solid;
+            width: 129pt;
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-bottom-style: solid;
+            vertical-align: top;
+            border-top-color: #000000;
+            border-left-color: #000000;
+            border-right-color: #000000;
+            border-left-style: solid;
+            border-right-width: 1pt;
+            border-left-width: 1pt
+        }
+        .c22 {
+            border-bottom-width: 1pt;
+            border-top-style: solid;
+            width: 339pt;
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-bottom-style: solid;
+            vertical-align: top;
+            border-top-color: #000000;
+            border-left-color: #000000;
+            border-right-color: #000000;
+            border-left-style: solid;
+            border-right-width: 1pt;
+            border-left-width: 1pt
+        }
+        .c3 {
+            vertical-align: baseline;
+            color: #000000;
+            font-size: 11pt;
+            font-style: normal;
+            font-family: "Arial";
+            text-decoration: none;
+            font-weight: normal
+        }
+        .c28 {
+            vertical-align: baseline;
+            color: #000099;
+            font-size: 11pt;
+            font-style: normal;
+            font-family: "Arial";
+            text-decoration: underline;
+            font-weight: normal
+        }
+        .c33 {
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-style: normal;
+            font-family: "Arial";
+            text-decoration: none;
+            font-weight: normal
+        }
+        .c43 {
+            color: #000000;
+            font-size: 11pt;
+            font-style: normal;
+            font-family: "Arial";
+            text-decoration: none;
+            font-weight: normal
+        }
+        .c19 {
+            vertical-align: baseline;
+            color: #000000;
+            font-size: 11pt;
+            font-style: normal;
+            text-decoration: none;
+            font-weight: normal
+        }
+        .c46 {
+            vertical-align: baseline;
+            color: #000000;
+            font-size: 11pt;
+            font-style: normal;
+            text-decoration: line-through;
+            font-weight: normal
+        }
+        .c0 {
+            line-height: 1.15;
+            padding-top: 0pt;
+            text-align: left;
+            direction: ltr;
+            padding-bottom: 0pt
+        }
+        .c6 {
+            line-height: 1.0;
+            padding-top: 0pt;
+            text-align: left;
+            direction: ltr;
+            padding-bottom: 0pt
+        }
+        .c10 {
+            vertical-align: baseline;
+            color: #000000;
+            font-style: normal;
+            font-family: "Arial";
+            text-decoration: none
+        }
+        .c39 {
+            line-height: 1.15;
+            padding-top: 12pt;
+            text-align: left;
+            padding-bottom: 2pt
+        }
+        .c30 {
+            line-height: 1.15;
+            padding-top: 24pt;
+            text-align: left;
+            padding-bottom: 6pt
+        }
+        .c32 {
+            line-height: 1.15;
+            padding-top: 14pt;
+            text-align: left;
+            padding-bottom: 4pt
+        }
+        .c24 {
+            line-height: 1.15;
+            padding-top: 18pt;
+            text-align: left;
+            padding-bottom: 4pt
+        }
+        .c41 {
+            line-height: 1.15;
+            padding-top: 11pt;
+            text-align: left;
+            padding-bottom: 2pt
+        }
+        .c37 {
+            color: #4374b7;
+            font-size: 10pt;
+            background-color: #ffffff
+        }
+        .c36 {
+            max-width: 468pt;
+            background-color: #ffffff;
+            padding: 72pt 72pt 72pt 72pt
+        }
+        .c45 {
+            margin-right: auto;
+            border-collapse: collapse
+        }
+        .c23 {
+            font-size: 14pt;
+            font-weight: bold
+        }
+        .c38 {
+            color: #500050;
+            font-size: 10pt
+        }
+        .c42 {
+            padding-top: 0pt;
+            padding-bottom: 0pt
+        }
+        .c11 {
+            margin: 0;
+            padding: 0
+        }
+        .c27 {
+            font-size: 12pt;
+            font-weight: bold
+        }
+        .c5 {
+            color: #1155cc;
+            text-decoration: underline
+        }
+        .c40 {
+            font-size: 10pt;
+            background-color: #ffffff
+        }
+        .c31 {
+            color: #000099;
+            text-decoration: underline
+        }
+        .c14 {
+            color: inherit;
+            text-decoration: inherit
+        }
+        .c18 {
+            font-size: 11pt;
+            font-weight: bold
+        }
+        .c20 {
+            font-size: 18pt;
+            font-weight: bold
+        }
+        .c1 {
+            direction: ltr;
+            margin-left: 54pt
+        }
+        .c35 {
+            font-size: 24pt;
+            font-weight: bold
+        }
+        .c8 {
+            padding-left: 0pt;
+            margin-left: 36pt
+        }
+        .c9 {
+            height: 11pt
+        }
+        .c26 {
+            margin-left: 36pt
+        }
+        .c29 {
+            text-align: center
+        }
+        .c16 {
+            font-style: italic
+        }
+        .c7 {
+            height: 0pt
+        }
+        .c44 {
+            margin-left: 90pt
+        }
+        .c21 {
+            margin-left: 72pt
+        }
+        .c34 {
+            margin-left: 18pt
+        }
+        .c13 {
+            direction: ltr
+        }
+        .c2 {
+            font-family: "Courier New"
+        }
+        .title {
+            widows: 2;
+            padding-top: 24pt;
+            line-height: 1.15;
+            orphans: 2;
+            text-align: left;
+            color: #000000;
+            font-size: 36pt;
+            font-family: "Arial";
+            font-weight: bold;
+            padding-bottom: 6pt;
+            page-break-after: avoid
+        }
+        .subtitle {
+            widows: 2;
+            padding-top: 18pt;
+            line-height: 1.15;
+            orphans: 2;
+            text-align: left;
+            color: #666666;
+            font-style: italic;
+            font-size: 24pt;
+            font-family: "Georgia";
+            padding-bottom: 4pt;
+            page-break-after: avoid
+        }
+    </style>
+</head>
+
+<body>
+<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li><a href="/">Sourcemap tool</a>
+      <li class="active"><a href="/spec.html">The spec</a>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="alert alert-success" role="alert"><b>Note!</b> This is a copy of <a href="https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit#heading=h.djovrt4kdvga">the standard</a>. Any discrepencies should be resolved in favour of the Google Doc. </div>
+
+    <h1 class="c13 c30"><a name="h.1ce2c87bpj24"></a><span class="c10 c35">Source Map Revision 3 Proposal</span></h1>
+    <p class="c0"><span class="c3">Better bidirectional mapping.</span>
+    </p>
+    <p class="c0"><span class="c3">John Lenz, Google</span>
+    </p>
+    <p class="c0"><span class="c3">Nick Fitzgerald, Mozilla</span>
+    </p>
+    <p class="c0"><span class="c3">February 11, 2011</span>
+    </p>
+    <p class="c0 c9"><span class="c3"></span>
+    </p>
+    <h2 class="c24 c13"><a name="h.ue4jskhddao6"></a><span class="c10 c20">Table of Contents</span></h2>
+    <p class="c13 c34"><span class="c5"><a class="c14" href="#h.1ce2c87bpj24">Source Map Revision 3 Proposal</a></span>
+    </p>
+    <p class="c26 c13"><span class="c5"><a class="c14" href="#h.ue4jskhddao6">Table of Contents</a></span>
+    </p>
+    <p class="c26 c13"><span class="c5"><a class="c14" href="#h.e73ndbno7lii">Document Revisions</a></span>
+    </p>
+    <p class="c26 c13"><span class="c5"><a class="c14" href="#h.zhn1phd7ocnp">License</a></span>
+    </p>
+    <p class="c26 c13"><span class="c5"><a class="c14" href="#h.djovrt4kdvga">Background</a></span>
+    </p>
+    <p class="c26 c13"><span class="c5"><a class="c14" href="#h.crcf4lqeivt8">Terminology</a></span>
+    </p>
+    <p class="c26 c13"><span class="c5"><a class="c14" href="#h.mofvlxcwqzej">Revision 3 Format</a></span>
+    </p>
+    <p class="c1"><span class="c5"><a class="c14" href="#h.3l2f9su3ov2l">General Goals</a></span>
+    </p>
+    <p class="c1"><span class="c5"><a class="c14" href="#h.qz3o9nc69um5">Proposed Format</a></span>
+    </p>
+    <p class="c21 c13"><span class="c5"><a class="c14" href="#h.75yo6yoyk7x5">Resolving Sources</a></span>
+    </p>
+    <p class="c21 c13"><span class="c5"><a class="c14" href="#h.hval2vfopveu">Encoding</a></span>
+    </p>
+    <p class="c21 c13"><span class="c5"><a class="c14" href="#h.z8wbphyi88iu">Compression</a></span>
+    </p>
+    <p class="c21 c13"><span class="c5"><a class="c14" href="#h.ghqpj1ytqjbm">Extensions</a></span>
+    </p>
+    <p class="c13 c44"><span class="c5"><a class="c14" href="#h.n05z8dfyl3yh">Known Extensions</a></span>
+    </p>
+    <p class="c21 c13"><span class="c5"><a class="c14" href="#h.dgidvn2oxfdh">Notes</a></span>
+    </p>
+    <p class="c13 c21"><span class="c5"><a class="c14" href="#h.535es3xeprgt">Index map: supporting post processing</a></span>
+    </p>
+    <p class="c1"><span class="c5"><a class="c14" href="#h.txk3vdsh99hf">Conventions</a></span>
+    </p>
+    <p class="c21 c13"><span class="c5"><a class="c14" href="#h.9ppdoan5f016">Source Map Naming</a></span>
+    </p>
+    <p class="c21 c13"><span class="c5"><a class="c14" href="#h.lmz475t4mvbx">Linking generated code to source maps</a></span>
+    </p>
+    <p class="c21 c13"><span class="c5"><a class="c14" href="#h.fc227cy4qh38">Linking eval&rsquo;d code to named generate code</a></span>
+    </p>
+    <p class="c1"><span class="c5"><a class="c14" href="#h.dqbksi3exhfq">Language Neutral Stack Mapping Notes</a></span>
+    </p>
+    <p class="c1"><span class="c5"><a class="c14" href="#h.e8hx254xu4sa">Multi-level Mapping Notes</a></span>
+    </p>
+    <p class="c1"><span class="c5"><a class="c14" href="#h.h7yy76c5il9v">JSON over HTTP Transport</a></span>
+    </p>
+    <p class="c0 c9"><span class="c33"></span>
+    </p>
+    <h2 class="c24 c13"><a name="h.e73ndbno7lii"></a><span class="c10 c20">Document Revisions</span></h2>
+    <a href="#" name="6f7cfe1cb85b99359e9ddb78770f04183a965c5d"></a>
+    <a href="#" name="0"></a>
+    <table cellpadding="0" cellspacing="0" class="c45">
+        <tbody>
+            <tr class="c7">
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c0"><span class="c3">April 12, 2011</span>
+                    </p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c0"><span class="c3">John Lenz</span>
+                    </p>
+                </td>
+                <td class="c17" colspan="1" rowspan="1">
+                    <p class="c0"><span class="c3">Initial Revision</span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c7">
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c0"><span class="c3">April 15, 2011</span>
+                    </p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c0"><span class="c3">John Lenz</span>
+                    </p>
+                </td>
+                <td class="c17" colspan="1" rowspan="1">
+                    <p class="c0"><span class="c3">Updates to reflect prototype</span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c7">
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c0"><span>July 20, 2011</span>
+                    </p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c0"><span>John Lenz</span>
+                    </p>
+                </td>
+                <td class="c17" colspan="1" rowspan="1">
+                    <p class="c0"><span>Removed &ldquo;lineCount&rdquo; field, remove &ldquo;Combined Map&rdquo; section </span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c7">
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c6"><span>August 18, 2011</span>
+                    </p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c6"><span>John Lenz</span>
+                    </p>
+                </td>
+                <td class="c17" colspan="1" rowspan="1">
+                    <p class="c6"><span>Draft</span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c7">
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c6"><span>May 2, 2012</span>
+                    </p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c6"><span>John Lenz</span>
+                    </p>
+                </td>
+                <td class="c17" colspan="1" rowspan="1">
+                    <p class="c6"><span>HTTP header and CC-BY-SA license</span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c7">
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c6"><span>July 30, 2012</span>
+                    </p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c6"><span>John Lenz</span>
+                    </p>
+                </td>
+                <td class="c17" colspan="1" rowspan="1">
+                    <p class="c6"><span>Modified recommended HTTP header name.</span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c7">
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c6"><span>August 20, 2012</span>
+                    </p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c6"><span>John Lenz</span>
+                    </p>
+                </td>
+                <td class="c17" colspan="1" rowspan="1">
+                    <p class="c6"><span>Add CSS linkage recommendation</span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c7">
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c6"><span>October 24, 2012</span>
+                    </p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c6"><span>John Lenz</span>
+                    </p>
+                </td>
+                <td class="c17" colspan="1" rowspan="1">
+                    <p class="c6"><span>Add clarifying section on source locations.</span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c7">
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c6"><span>February 19, 2013</span>
+                    </p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c6"><span>John Lenz</span>
+                    </p>
+                </td>
+                <td class="c17" colspan="1" rowspan="1">
+                    <p class="c6"><span>Add &ldquo;sourcesContent&rdquo; line to support self contained source maps.</span>
+                    </p>
+                    <p class="c6"><span>Added note regarding using data uri to load source maps.</span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c7">
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c6"><span>May 16, 2013</span>
+                    </p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c6"><span>John Lenz</span>
+                    </p>
+                </td>
+                <td class="c17" colspan="1" rowspan="1">
+                    <p class="c6"><span>Updated linking convention to use # instead of @. @ conflicts with internet explorer&rsquo;s conditional code</span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c7">
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c6"><span>November 18, 2013</span>
+                    </p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c6"><span>John Lenz</span>
+                    </p>
+                </td>
+                <td class="c17" colspan="1" rowspan="1">
+                    <p class="c6"><span>Noted that &ldquo;file&rdquo; is an optional field.<br>Minor typographical corrections</span>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="c0 c9"><span class="c3"></span>
+    </p>
+    <p class="c0 c9"><span></span>
+    </p>
+    <h2 class="c24 c13"><a name="h.zhn1phd7ocnp"></a><span>License</span></h2>
+    <p class="c13 c29"><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 80.00px; height: 15.00px;"></span>
+    </p>
+    <p class="c0"><span class="c40">This work is licensed under a </span><span class="c37"><a class="c14" href="http://www.google.com/url?q=http%3A%2F%2Fcreativecommons.org%2Flicenses%2Fby-sa%2F3.0%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNG4j2oPozXv2_VqmmLiVAToFtwKdA">Creative Commons Attribution-ShareAlike 3.0 Unported License</a></span><span class="c40">.</span>
+    </p>
+    <p class="c0 c9"><span></span>
+    </p>
+    <h2 class="c13"><a name="h.q4jwyo5vn7wd"></a><span>Discussion</span></h2>
+    <p class="c9 c13"><span></span>
+    </p>
+    <p class="c13"><span>To discuss or propose changes to this specification, please use the dev-js-sourcemap mailing list: </span><span class="c5"><a class="c14" href="https://www.google.com/url?q=https%3A%2F%2Flists.mozilla.org%2Flistinfo%2Fdev-js-sourcemap&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNF_VYjErD9aXQLjMPShAAmNZ4uWGA">https://lists.mozilla.org/listinfo/dev-js-sourcemap</a></span>
+    </p>
+    <h2 class="c24 c13"><a name="h.djovrt4kdvga"></a><span class="c10 c20">Background</span></h2>
+    <p class="c0"><span>The original source map format (v1) was created by Joseph Schorr for use by Closure Inspector to enable source level debugging of optimized JavaScript code (although the format itself is language agnostic). &nbsp;However, as the size of the projects using the source maps expanded the verbosity of the format started to be become a problem. The v2 was created trading some simplicity and flexibility to reduce to overall size of the source map. </span><span class="c3">Even with the changes made with the v2 version of the format, the source map file size was limiting its usefulness. &nbsp;The v3 format is based on suggestions made by podivilov</span><span>.</span>
+    </p>
+    <p class="c0 c9"><span class="c3"></span>
+    </p>
+    <p class="c0"><span class="c3">Related documents:</span>
+    </p>
+    <p class="c0"><span class="c28"><a class="c14" href="https://docs.google.com/document/d/1xi12LrcqjqIHTtZzrzZKmQ3lbTv9mKrN076UB-j3UZQ/edit?hl=en_US">Revision 2 proposal </a></span>
+    </p>
+    <h2 class="c13 c24"><a name="h.crcf4lqeivt8"></a><span class="c10 c20">Terminology</span></h2>
+    <p class="c0 c9"><span class="c3"></span>
+    </p>
+    <a href="#" name="6f5c81a30c897351dd47e1028e5d45558655d1fb"></a>
+    <a href="#" name="1"></a>
+    <table cellpadding="0" cellspacing="0" class="c45">
+        <tbody>
+            <tr class="c7">
+                <td class="c15" colspan="1" rowspan="1">
+                    <p class="c6"><span class="c10 c18">Term</span>
+                    </p>
+                </td>
+                <td class="c22" colspan="1" rowspan="1">
+                    <p class="c6"><span class="c10 c18">Definition</span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c7">
+                <td class="c15" colspan="1" rowspan="1">
+                    <p class="c6"><span class="c3">Generated </span><span class="c3">Code</span>
+                    </p>
+                </td>
+                <td class="c22" colspan="1" rowspan="1">
+                    <p class="c6"><span class="c3">The code which is generated by the compiler.</span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c7">
+                <td class="c15" colspan="1" rowspan="1">
+                    <p class="c6"><span class="c3">Original Source</span>
+                    </p>
+                </td>
+                <td class="c22" colspan="1" rowspan="1">
+                    <p class="c6"><span class="c3">The source code which has not been passed through the compiler.</span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c7">
+                <td class="c15" colspan="1" rowspan="1">
+                    <p class="c6"><span>Base 64 VLQ</span>
+                    </p>
+                </td>
+                <td class="c22" colspan="1" rowspan="1">
+                    <p class="c6"><span>The </span><span class="c31"><a class="c14" href="http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FVariable-length_quantity&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGbaYv9IZBJ4F8r1CT_hcPd6G5W7g">VLQ</a></span><span>&nbsp;is a</span><span><a class="c14" href="http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBase64&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFBXL8z0E0DI1EBVFe0p1xFhqM-nQ">&nbsp;</a></span><span class="c31"><a class="c14" href="http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBase64&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFBXL8z0E0DI1EBVFe0p1xFhqM-nQ">Base64</a></span><span>&nbsp;value, where the most significant bit (the 6th bit) is used as the continuation bit, and the &ldquo;digits&rdquo; are encoded into the string least significant first, and where the least significant bit of the first digit is used as the sign bit.</span>
+                    </p>
+                    <p class="c6 c9"><span></span>
+                    </p>
+                    <p class="c6"><span>Note: The values that can be represent by the VLQ Base64 encoded are limited to 32 bit quantities until some use case for larger values is presented.</span>
+                    </p>
+                </td>
+            </tr>
+            <tr class="c7">
+                <td class="c15" colspan="1" rowspan="1">
+                    <p class="c6"><span>Source Mapping URL</span>
+                    </p>
+                </td>
+                <td class="c22" colspan="1" rowspan="1">
+                    <p class="c6"><span>The URL referencing the location of a source map from the generated code.</span>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="c0 c9"><span class="c3"></span>
+    </p>
+    <h2 class="c24 c13"><a name="h.mofvlxcwqzej"></a><span class="c10 c20">Revision 3 </span><span>F</span><span class="c10 c20">ormat</span></h2>
+    <h3 class="c32 c13"><a name="h.3l2f9su3ov2l"></a><span class="c10 c23">General Goals</span></h3>
+    <ul class="c11 lst-kix_a9qddps1t1gt-0 start">
+        <li class="c0 c8"><span class="c3">Reduce the overall size to improve parse time, memory consumption, and download time.</span>
+        </li>
+        <li class="c0 c8"><span class="c3">Support source level debugging allowing bidirectional mapping</span>
+        </li>
+        <li class="c0 c8"><span class="c3">Support server side stack trace deobfuscation</span>
+        </li>
+    </ul>
+    <p class="c0 c9"><span class="c3"></span>
+    </p>
+    <h3 class="c32 c13"><a name="h.qz3o9nc69um5"></a><span class="c10 c23">Proposed </span><span>F</span><span class="c10 c23">ormat</span></h3>
+    <ol class="c11 lst-kix_vimrmofn9nkl-0 start" start="1">
+        <li class="c0 c8"><span class="c19 c2">{</span>
+        </li>
+        <li class="c0 c8"><span class="c2">&quot;</span><span class="c19 c2">version</span><span class="c2">&quot;</span><span class="c19 c2">&nbsp;: 3,</span>
+        </li>
+        <li class="c0 c8"><span class="c2">&quot;</span><span class="c19 c2">file</span><span class="c2">&quot;</span><span class="c19 c2">: </span><span class="c2">&quot;</span><span class="c19 c2">out.js</span><span class="c2">&quot;</span><span class="c19 c2">,</span>
+        </li>
+        <li class="c0 c8"><span class="c2">&quot;</span><span class="c19 c2">sourceRoot</span><span class="c2">&quot;</span><span class="c19 c2">: &quot;&quot;,</span>
+        </li>
+        <li class="c0 c8"><span class="c2">&quot;</span><span class="c19 c2">sources</span><span class="c2">&quot;</span><span class="c19 c2">: [&quot;foo.js&quot;, &quot;bar.js&quot;],</span>
+        </li>
+        <li class="c0 c8"><span class="c2">&quot;sourcesContent&quot;: [null, null],</span>
+        </li>
+        <li class="c0 c8"><span class="c2">&quot;</span><span class="c19 c2">names</span><span class="c2">&quot;</span><span class="c19 c2">: [&quot;src&quot;, &quot;maps&quot;, &quot;are&quot;, &quot;fun&quot;],</span>
+        </li>
+        <li class="c0 c8"><span class="c2">&quot;</span><span class="c2 c19">mappings</span><span class="c2">&quot;</span><span class="c19 c2">: &quot;A,A</span><span class="c2">AAB</span><span class="c19 c2">;;ABCDE;&quot;</span>
+        </li>
+        <li class="c0 c8"><span class="c19 c2">}</span>
+        </li>
+    </ol>
+    <p class="c0 c9"><span class="c19 c2"></span>
+    </p>
+    <p class="c0"><span class="c3">Line 1: The entire file is a single JSON object</span>
+    </p>
+    <p class="c0"><span class="c3">Line 2: </span><span class="c3">File version (always the first entry in the object)</span><span>&nbsp;and</span><span class="c3">&nbsp;</span><span>must be a positive integer.</span>
+    </p>
+    <p class="c0"><span class="c3">Line 3: An optional name of the </span><span>generated code</span><span class="c3">&nbsp;that this source map is associated with.</span>
+    </p>
+    <p class="c0"><span class="c3">Line </span><span>4</span><span class="c3">: An optional source root, useful for relocating source files on a server or removing repeated values in the &ldquo;sources&rdquo; entry. &nbsp;</span><span class="c3">This value is prepen</span><span>ded to the individual entries in the &ldquo;source&rdquo; field.</span>
+    </p>
+    <p class="c0"><span class="c3">Line </span><span>5</span><span class="c3">: A list of original sources used by the &ldquo;mappings&rdquo; entry.</span>
+    </p>
+    <p class="c0"><span>Line 6: An optional list of source content, useful when the &ldquo;source&rdquo; can&rsquo;t be hosted. </span><span>The contents are listed in the same order as the sources in line 5. &ldquo;null&rdquo; may be used if some original sources should be retrieved by name.</span>
+    </p>
+    <p class="c0"><span class="c3">Line </span><span>7</span><span class="c3">: A list of symbol names used by the &ldquo;mappings&rdquo; entry.</span>
+    </p>
+    <p class="c0"><span class="c3">Line </span><span>8</span><span class="c3">: A string with the encoded mapping data.</span>
+    </p>
+    <p class="c0 c9"><span class="c3"></span>
+    </p>
+    <p class="c0"><span class="c3">The &ldquo;mappings&rdquo; data is broken down as follows:</span>
+    </p>
+    <ul class="c11 lst-kix_wtoh0mytj1vb-0 start">
+        <li class="c0 c8"><span class="c3">each group representing a </span><span class="c3">line</span><span class="c3">&nbsp;in the generated file is separated by a &rdquo;;&rdquo;</span>
+        </li>
+        <li class="c0 c8"><span class="c3">each segment is separated by a &ldquo;,&rdquo;</span>
+        </li>
+        <li class="c0 c8"><span class="c3">each segment is made up of </span><span class="c3">1,4 or 5</span><span class="c3">&nbsp;variable length fields.</span>
+        </li>
+    </ul>
+    <p class="c0 c9"><span class="c3"></span>
+    </p>
+    <p class="c0"><span class="c3">The fields in each segment are:</span>
+    </p>
+    <ol class="c11 lst-kix_m7qnbm8m71hm-0 start" start="1">
+        <li class="c0 c8"><span>T</span><span class="c3">he zero-based </span><span class="c3">starting column</span><span class="c3">&nbsp;of the line in the generated </span><span>code </span><span class="c3">that the segment represents. </span><span>If this is the first field of the first segment, or the first segment following a new generated line (&ldquo;;&rdquo;), then this field holds the whole base 64 VLQ. Otherwise, this field contains a base 64 VLQ that is relative to the previous occurrence of this field. </span><span class="c16">Note that this is different than the fields below because the previous value is reset after every generated line.</span>
+        </li>
+        <li class="c0 c8"><span>I</span><span class="c3">f present, an zero-based index into the </span><span>&ldquo;</span><span class="c3">sources</span><span>&rdquo;</span><span class="c3">&nbsp;list. </span><span>This field is a base 64 VLQ relative to the previous occurrence of this field, unless this is the first occurrence of this field, in which case the whole value is represented.</span>
+        </li>
+        <li class="c0 c8"><span>I</span><span class="c3">f present, the zero-based starting line in the original source represented. </span><span>This field is a base 64 VLQ relative to the previous occurrence of this field, unless this is the first occurrence of this field, in which case the whole value is represented. </span><span class="c3">Always present if there is a source field.</span>
+        </li>
+        <li class="c0 c8"><span>I</span><span class="c3">f present, the zero-based starting column of the line in the source represented. </span><span>This field is a base 64 VLQ relative to the previous occurrence of this field, unless this is the first occurrence of this field, in which case the whole value is represented.</span><span class="c3">&nbsp;Always present if there is a source field.</span>
+        </li>
+        <li class="c0 c8"><span>I</span><span class="c3">f present, the zero-ba</span><span>sed </span><span class="c3">index into the </span><span>&ldquo;</span><span class="c3">names</span><span>&rdquo;</span><span class="c3">&nbsp;list associated with this </span><span>segment</span><span class="c3">. </span><span>This field is a base 64 VLQ relative to the previous occurrence of this field, unless this is the first occurrence of this field, in which case the whole value is represented.</span>
+        </li>
+    </ol>
+    <p class="c0 c9"><span class="c3"></span>
+    </p>
+    <p class="c0"><span class="c3">Note</span><span class="c3">: This encoding reduces the source map size 50% relative to the V2 format in tests performed using Google Calendar.</span>
+    </p>
+    <h4 class="c13 c39"><a name="h.75yo6yoyk7x5"></a><span>Resolving Sources</span></h4>
+    <p class="c13"><span>If the sources are not absolute URLs after prepending of the &ldquo;sourceRoot&rdquo;, the sources are resolved relative to the SourceMap (like resolving script src in a html document).</span>
+    </p>
+    <h4 class="c39 c13"><a name="h.hval2vfopveu"></a><span class="c10 c27">Encoding</span></h4>
+    <p class="c0"><span class="c3">For simplicity, the character set encoding is always UTF-8.</span>
+    </p>
+    <h4 class="c13"><a name="h.z8wbphyi88iu"></a><span>Compression</span></h4>
+    <p class="c0"><span class="c3">The file is allowed to be GZIP compressed. &nbsp; It is not expected that in-browser consumers of the the source map will support GZIP compression directly but that they will consume an uncompressed map that may be GZIP</span><span>&rsquo;</span><span class="c3">d for transport.</span>
+    </p>
+    <h4 class="c13"><a name="h.ghqpj1ytqjbm"></a><span>Extensions</span></h4>
+    <p class="c0"><span class="c3">Additional fields may be added to the top level source map provided the fields begin with the &ldquo;x_&rdquo; naming convention. &nbsp;It is expected that the extensions would be classified by the organization providing the extension, such as &ldquo;x_google_linecount&rdquo;. &nbsp; &nbsp;Field names outside the &ldquo;x_&rdquo; namespace are reserved for future revisions. It is </span><span class="c10 c18">recommended</span><span class="c3">&nbsp;that fields be namespaced by domain, i.e. x_com_google_gwt_linecount.</span>
+    </p>
+    <h5 class="c13 c41"><a name="h.n05z8dfyl3yh"></a><span class="c10 c18">Known Extensions</span></h5>
+    <p class="c0"><span>&ldquo;x_google_linecount&rdquo; - the number of line represented by this source map. </span>
+    </p>
+    <h4 class="c13"><a name="h.dgidvn2oxfdh"></a><span>Notes</span></h4>
+    <p class="c0"><span>U</span><span class="c3">s</span><span>ing file </span><span class="c3">offsets were considered but rejected in </span><span>favor of using</span><span class="c3">&nbsp;line</span><span>/</span><span class="c3">column data to avoid becoming mis</span><span>aligned</span><span class="c3">&nbsp;with the </span><span>original due to platform specific line endings</span><span class="c3">.</span><span class="c3">&nbsp;</span>
+    </p>
+    <h4 class="c29 c13"><a name="h.535es3xeprgt"></a><span>Index map: supporting post processing</span></h4>
+    <p class="c0"><span class="c3">To support concatenating generated code and other common post processing, an alternate representation of a map is supported:</span>
+    </p>
+    <ol class="c11 lst-kix_4muvd055a426-0 start" start="1">
+        <li class="c0 c8"><span class="c2">{</span>
+        </li>
+        <li class="c0 c8"><span class="c2">version : 3,</span>
+        </li>
+        <li class="c0 c8"><span class="c2">file: &ldquo;app.js&rdquo;,</span>
+        </li>
+        <li class="c0 c8"><span class="c2">sections: [</span>
+        </li>
+        <li class="c0 c8"><span class="c2">&nbsp;{ offset: {line:0, column:0}, </span><span class="c2">url: &ldquo;url_for_part1.map&rdquo;</span><span class="c2">&nbsp;}</span>
+        </li>
+        <li class="c8 c13"><span class="c2">&nbsp;{ offset: {line:100, column:10}, map: </span>
+        </li>
+        <li class="c8 c13"><span class="c2">&nbsp; &nbsp;{</span>
+        </li>
+        <li class="c8 c13"><span class="c2">&nbsp; &nbsp; &nbsp;version : 3,</span>
+        </li>
+        <li class="c0 c8"><span class="c2">&nbsp; &nbsp; &nbsp;file: &ldquo;section.js&rdquo;,</span>
+        </li>
+        <li class="c0 c8"><span class="c2">&nbsp; &nbsp; &nbsp;sources: [&quot;foo.js&quot;, &quot;bar.js&quot;],</span>
+        </li>
+        <li class="c8 c13"><span class="c2">&nbsp; &nbsp; &nbsp;names: [&quot;src&quot;, &quot;maps&quot;, &quot;are&quot;, &quot;fun&quot;],</span>
+        </li>
+        <li class="c8 c13"><span class="c2">&nbsp; &nbsp; &nbsp;mappings: &quot;</span><span class="c2">AAAA,E;;ABCDE;</span><span class="c2">&quot;</span>
+        </li>
+        <li class="c8 c13"><span class="c2">&nbsp; &nbsp;}</span>
+        </li>
+        <li class="c0 c8"><span class="c2">&nbsp;}</span>
+        </li>
+        <li class="c0 c8"><span class="c2">],</span>
+        </li>
+        <li class="c0 c8"><span class="c2">}</span>
+        </li>
+    </ol>
+    <p class="c0 c9"><span class="c3"></span>
+    </p>
+    <p class="c0 c9"><span class="c3"></span>
+    </p>
+    <p class="c0"><span>The index map follow the form of the standard map</span>
+    </p>
+    <p class="c0"><span>Line 1: The entire file is an JSON object.</span>
+    </p>
+    <p class="c13"><span>Line 2: The version field. See the description of the standard map.</span>
+    </p>
+    <p class="c13"><span>Line 3: The name field. See the description of the standard map.</span>
+    </p>
+    <p class="c13"><span>Line 4: The sections field.</span>
+    </p>
+    <p class="c9 c13"><span></span>
+    </p>
+    <p class="c0"><span>The </span><span class="c3">&ldquo;sections&rdquo; field is an array of JSON objects that itself has two fields &ldquo;offset&rdquo; and </span><span>a source map reference</span><span class="c3">. &nbsp;&ldquo;offset&rdquo; is an object with two fields, </span><span>&ldquo;</span><span class="c3">line</span><span>&rdquo;</span><span class="c3">&nbsp;and </span><span>&ldquo;</span><span class="c3">column</span><span>&rdquo;</span><span class="c3">, that represent the offset into </span><span>generated code</span><span class="c3">&nbsp;that the referenced source map represents.</span>
+    </p>
+    <p class="c0"><span>The other field must be either &ldquo;url&rdquo; or &ldquo;map&rdquo;. A &ldquo;url&rdquo; entry must be a URL where a source map can be found for this section and the url is resolved in the same way as the &ldquo;sources&rdquo; fields in the standard map. A &ldquo;map&rdquo; entry must be an embedded complete source map object. &nbsp;An embedded map does not inherit any values from the containing index map.</span>
+    </p>
+    <p class="c0 c9"><span class="c3"></span>
+    </p>
+    <p class="c0"><span class="c3">The sections must be sorted by starting pos</span><span>ition </span><span class="c3">and </span><span>the represented sections </span><span class="c3">may not overlap.</span>
+    </p>
+    <p class="c0 c9"><span class="c3"></span>
+    </p>
+    <h3 class="c32 c13"><a name="h.txk3vdsh99hf"></a><span class="c10 c23">Conventions</span></h3>
+    <h4 class="c13"><a name="h.9ppdoan5f016"></a><span>Source Map </span><span>Naming</span></h4>
+    <p class="c0"><span>Optionally, a source map will have the same name as the generated file but with a &ldquo;.map&rdquo; extension. &nbsp;For example, for &ldquo;page.js&rdquo; a source map named &ldquo;page.js.map&rdquo; would be generated.</span><span>&nbsp;</span>
+    </p>
+    <h4 class="c13"><a name="h.lmz475t4mvbx"></a><span>Linking generated code to source maps</span></h4>
+    <p class="c0"><span>While the source map format is intended to be language and platform agnostic, it is useful to have a some conventions for the expected use-case of web server hosted javascript.</span>
+    </p>
+    <p class="c0 c9"><span></span>
+    </p>
+    <p class="c0"><span>There are two suggested ways to link source maps to the output. &nbsp;The first requires server support to add a HTTP header and the second requires an annotation in the source.</span>
+    </p>
+    <p class="c0 c9"><span></span>
+    </p>
+    <p class="c0"><span>The HTTP header should supply the source map URL reference as:</span>
+    </p>
+    <p class="c0"><span>&nbsp;</span>
+    </p>
+    <p class="c0 c26"><span class="c2">SourceMap: &lt;url&gt;</span>
+    </p>
+    <p class="c0 c9"><span></span>
+    </p>
+    <p class="c13"><span>Note: previous revisions of this document recommended a header name of &ldquo;X-SourceMap&rdquo;. This is now deprecated; &ldquo;SourceMap&rdquo; is now expected.</span>
+    </p>
+    <p class="c9 c13"><span></span>
+    </p>
+    <p class="c13"><span>The generated code may include a line </span><span>at the end of the source</span><span>, with the following form:</span>
+    </p>
+    <p class="c9 c13"><span></span>
+    </p>
+    <p class="c0 c26"><span class="c19 c2">//</span><span class="c2">#</span><span class="c19 c2">&nbsp;sourceMappingURL=&lt;url&gt;</span>
+    </p>
+    <p class="c0 c9 c26"><span class="c2"></span>
+    </p>
+    <p class="c0"><span>Note: The prefix for this annotation was initially &ldquo;//@&rdquo; however this conflicts with Internet Explorer&rsquo;s Conditional Compilation and was changed to &ldquo;//#&rdquo;. &nbsp;It is reasonable for tools to also accept &ldquo;//@&rdquo; but &ldquo;//#&rdquo; is preferred.</span>
+    </p>
+    <p class="c0 c9"><span></span>
+    </p>
+    <p class="c0"><span>This recommendation works well for JavaScript, it is expected that other source files will have other conventions:</span>
+    </p>
+    <p class="c0 c9"><span></span>
+    </p>
+    <p class="c0 c9"><span></span>
+    </p>
+    <a href="#" name="25aeba7b369adea24d15269876461b451944579b"></a>
+    <a href="#" name="2"></a>
+    <table cellpadding="0" cellspacing="0" class="c45">
+        <tbody>
+            <tr class="c7">
+                <td class="c25" colspan="1" rowspan="1">
+                    <p class="c6"><span>CSS</span>
+                    </p>
+                </td>
+                <td class="c4" colspan="1" rowspan="1">
+                    <p class="c6"><span>/*# sourceMappingURL=&lt;url&gt;</span><span>&nbsp;*/</span>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="c0 c9"><span></span>
+    </p>
+    <p class="c0 c9"><span></span>
+    </p>
+    <p class="c0"><span>Note: &lt;url&gt; is a URL as defined in RFC3986; in particular, characters outside the set permitted to appear in URIs must be percent-encoded.</span>
+    </p>
+    <p class="c0"><span>Note: &lt;url&gt; maybe a data URI. &nbsp;Using a data URI along with &ldquo;sourcesContent&rdquo; allow for a completely self-contained source-map.</span>
+    </p>
+    <p class="c0 c9"><span></span>
+    </p>
+    <p class="c0"><span>Regardless of the method used to retrieve the source mapping URL the same process is used to resolve it, which is as follows:</span>
+    </p>
+    <p class="c0"><span>&nbsp;When the source mapping URL is not absolute, then it is relative to the generated code&rsquo;s &ldquo;source origin&rdquo;. The source origin is determined by one of the following cases:</span>
+    </p>
+    <p class="c0 c9"><span></span>
+    </p>
+    <ul class="c11 lst-kix_oxjbhptpdal1-0 start">
+        <li class="c0 c8"><span>If the generated source is not associated with a script element that has a &ldquo;src&rdquo; attribute and there exists a </span><span class="c2">//# sourceURL</span><span>&nbsp;comment in the generated code, that comment should be used to determine the source origin. Note: Previously, this was &ldquo;//@ sourceURL&rdquo;, as with &ldquo;//@ sourceMappingURL&rdquo;, it is reasonable to accept both but //# is preferred.</span>
+        </li>
+    </ul>
+    <ul class="c11 lst-kix_5xseafjoky57-0 start">
+        <li class="c0 c8"><span>If the generated code is associated with a script element and the script element has a &ldquo;src&rdquo; attribute, the &ldquo;src&rdquo; attribute of the script element will be the source origin.</span>
+        </li>
+        <li class="c0 c8"><span>If the generated code is associated with a script element and the script element does not have a &ldquo;src&rdquo; attribute, then the source origin will be the page&rsquo;s origin.</span>
+        </li>
+        <li class="c0 c8"><span>If the generated code is being evaluated as a string with the </span><span class="c2">eval()</span><span>&nbsp;function or via </span><span class="c2">new Function()</span><span>, then the source origin will be the page&rsquo;s origin.</span>
+        </li>
+    </ul>
+    <p class="c0 c9"><span class="c19 c2"></span>
+    </p>
+    <h4 class="c13"><a name="h.fc227cy4qh38"></a><span>Linking eval&rsquo;d code to named generate code</span></h4>
+    <p class="c13"><span>There is an existing convention that should be supported for the use of source maps with eval&rsquo;d code, it has the following form:</span>
+    </p>
+    <p class="c26 c13"><span class="c2">//@ sourceURL=foo.js</span>
+    </p>
+    <p class="c9 c13"><span></span>
+    </p>
+    <p class="c13"><span>It is described here:</span>
+    </p>
+    <p class="c13"><span class="c31"><a class="c14" href="http://www.google.com/url?q=http%3A%2F%2Fblog.getfirebug.com%2F2009%2F08%2F11%2Fgive-your-eval-a-name-with-sourceurl%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGTmo1oeVMYYnkym1sNCKRubqEdZQ">http://blog.getfirebug.com/2009/08/11/give-your-eval-a-name-with-sourceurl/</a></span>
+    </p>
+    <p class="c9 c13"><span></span>
+    </p>
+    <h3 class="c13 c32"><a name="h.dqbksi3exhfq"></a><span>Language Neutral Stack Mapping Notes</span></h3>
+    <p class="c13"><span>Stack tracing mapping without knowledge of the source language is not covered by this document.</span>
+    </p>
+    <p class="c9 c13"><span></span>
+    </p>
+    <h3 class="c13"><a name="h.e8hx254xu4sa"></a><span>Multi-level Mapping Notes</span></h3>
+    <p class="c42 c13"><span>It is getting more common to have tools generate source from some </span><span class="c31"><a class="c14" href="http://www.google.com/url?q=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDomain-specific_language&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHHFC688Gk030MFph_E9e5bb91vxw">DSL</a></span><span>&nbsp;(templates) or to compile CoffeeScript -&gt; JavaScript -&gt; minified JavaScript, resulting in multiple translations before the final source map is created. &nbsp;This problem can be handled in one of two ways. &nbsp;The easy but lossy way is to ignore the intermediate steps in the process for the purposes of debugging, the source location information from the translation is either ignored (the intermediate translation is considered the &ldquo;Original Source&rdquo;) or the source location information is carried through (the intermediate translation hidden). &nbsp;The more complete way is to support multiple levels of mapping: if the Original Source also has a source map reference, the user is given the choice of using the that as well.</span>
+    </p>
+    <p class="c9 c13 c42"><span></span>
+    </p>
+    <p class="c0"><span>However, It is unclear what a &ldquo;source map reference&rdquo; looks like in anything other than JavaScript. &nbsp;More specifically, what a source map reference looks like in a language that doesn&rsquo;t support JavaScript style single line comments. &nbsp;An HTTP header would address this, but is not yet agreed upon.</span>
+    </p>
+    <h3 class="c13"><a name="h.h7yy76c5il9v"></a><span>JSON over HTTP Transport</span></h3>
+    <p class="c0"><span class="c31"><a class="c14" href="http://www.google.com/url?q=http%3A%2F%2Fgoogleonlinesecurity.blogspot.com%2F2011%2F05%2Fwebsite-security-for-webmasters.html&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGfEVwZAC-5zTvoGFDCjdNE25PBcw">XSSI</a></span><span>&nbsp;attacks could potentially make source maps available to attackers by doing a direct script src to a source map after overriding the Array constructor. This can be effectively prevented by preprending a JavaScript syntax error to the start of the response.</span>
+    </p>
+    <p class="c0"><span>Thus when delivering source maps over HTTP, servers may prepend a line starting with the string &ldquo;</span><span class="c38">)]}&#39;</span><span>&rdquo; to the sourcemap. If the response starts with this string clients must ignore the first line.</span>
+    </p>
+    <p class="c0 c9"><span></span>
+    </p>
+    <p class="c0 c9"><span></span>
+    </p>
+    <p class="c0 c9"><span></span>
+    </p>
+</body>
+
+</html>
