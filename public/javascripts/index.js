@@ -88,9 +88,11 @@ sourcemapsApp.controller('LoadController', ['$scope', '$http', function ($scope,
 
             response.data.split("\n").forEach(function (line) {
                 var match = line.match(/(?:\/\/|\/\*) *# *sourceMappingURL *= *([^ ]*)/);
-
+                
                 if (match) {
-                    $scope.script.mapUrl = URI(match[1]).absoluteTo($scope.script.url).toString();
+                    try {
+                        $scope.script.mapUrl = URI(match[1]).absoluteTo($scope.script.url).toString();
+                    } catch (e) {}
                 }
             });
 
