@@ -5,7 +5,9 @@ import (
 	"log"
 	"net"
 	"net/http"
+	"net/url"
 	"os"
+	"strings"
 
 	"github.com/bugsnag/bugsnag-go"
 )
@@ -29,20 +31,55 @@ func main() {
 
 	log.Println("Listening on :" + port)
 
-	err := http.ListenAndServe(":" + port, bugsnag.Handler(nil))
+	err := http.ListenAndServe(":"+port, bugsnag.Handler(nil))
 	if err != nil {
 		panic(err)
 	}
 }
 
+var allowedDomains = []string{
+	"smartbear.com",
+	"bugsnag.com",
+}
+
+func isAllowedHost(host string) bool {
+	host = strings.ToLower(host)
+	for _, domain := range allowedDomains {
+		if host == domain || strings.HasSuffix(host, "."+domain) {
+			return true
+		}
+	}
+	return false
+}
+
 func proxy(w http.ResponseWriter, r *http.Request) {
 
-	req, err := http.NewRequest("GET", r.URL.Query().Get("url"), nil)
-	if err != nil {
-		log.Fatalln(err)
-		w.WriteHeader(http.StatusInternalServerError)
-		w.Write([]byte(err.Error()))
+	//req, err := http.NewRequest("GET", r.URL.Query().Get("url"), nil)
+	target := r.URL.Query().Get("url")
+	if target == "" {
+		http.Error(w, "missing URL", http.StatusBadRequest)
+		return
 	}
+	u, err := url.Parse(target)
+	//log.Printf("Scheme: %q", u.Scheme)
+	if err != nil {
+		//log.Fatalln(err)
+		//w.WriteHeader(http.StatusInternalServerError)
+		//w.Write([]byte(err.Error()))
+		http.Error(w, "invalid URL", http.StatusBadRequest)
+		return
+	}
+	if u.Scheme != "https" {
+		http.Error(w, "https required", http.StatusBadRequest)
+		return
+	}
+	host := strings.ToLower(u.Hostname())
+	if !isAllowedHost(host) {
+		http.Error(w, "Host not allowed", http.StatusForbidden)
+		return
+	}
+
+	req, err := http.NewRequest("GET", u.String(), nil)
 
 	// Make it easy for upstreams to filter out traffic from sourcemaps.info
 	// We should also deploy this with a static outbound IP.
