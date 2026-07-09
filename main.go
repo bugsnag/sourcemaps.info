@@ -48,6 +48,12 @@ var lookupIPAddr = net.DefaultResolver.LookupIPAddr
 
 var outboundHTTPClient = &http.Client{Transport: newRestrictedTransport()}
 
+type approvedTarget struct {
+	host     string
+	path     string
+	rawQuery string
+}
+
 func newRestrictedTransport() *http.Transport {
 	transport := http.DefaultTransport.(*http.Transport).Clone()
 	transport.DialContext = restrictedDialContext
@@ -76,7 +82,21 @@ func isBlockedIP(ip net.IP) bool {
 	return ip.Equal(net.ParseIP("169.254.169.254"))
 }
 
-func validateTargetURL(target string) (*url.URL, error) {
+func (target approvedTarget) url() *url.URL {
+	path := target.path
+	if path == "" {
+		path = "/"
+	}
+
+	return &url.URL{
+		Scheme:   "https",
+		Host:     target.host,
+		Path:     path,
+		RawQuery: target.rawQuery,
+	}
+}
+
+func validateTargetURL(target string) (*approvedTarget, error) {
 	if target == "" {
 		return nil, fmt.Errorf("missing URL")
 	}
@@ -111,7 +131,11 @@ func validateTargetURL(target string) (*url.URL, error) {
 		return nil, fmt.Errorf("IP address not allowed")
 	}
 
-	return u, nil
+	return &approvedTarget{
+		host:     host,
+		path:     u.EscapedPath(),
+		rawQuery: u.RawQuery,
+	}, nil
 }
 
 func restrictedDialContext(ctx context.Context, network, addr string) (net.Conn, error) {
@@ -147,7 +171,7 @@ func proxy(w http.ResponseWriter, r *http.Request) {
 
 	//req, err := http.NewRequest("GET", r.URL.Query().Get("url"), nil)
 	target := r.URL.Query().Get("url")
-	u, err := validateTargetURL(target)
+	approved, err := validateTargetURL(target)
 	if err != nil {
 		statusCode := http.StatusBadRequest
 		if err.Error() == "host not allowed" || err.Error() == "IP address not allowed" || err.Error() == "port not allowed" {
@@ -157,11 +181,12 @@ func proxy(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	req, err := http.NewRequest("GET", u.String(), nil)
-	if err != nil {
-		http.Error(w, "failed to create request", http.StatusInternalServerError)
-		return
+	req := &http.Request{
+		Method: http.MethodGet,
+		URL:    approved.url(),
+		Header: make(http.Header),
 	}
+	req = req.WithContext(r.Context())
 
 	// Make it easy for upstreams to filter out traffic from sourcemaps.info
 	// We should also deploy this with a static outbound IP.
